@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+}
+.footer {
+    background-color:black;
+    padding:60px;
+    width: 100%;
+}
+
+.ft-container {
+    max-width:none;
+}
+
+.row {
+    display:flex;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.socio {
+    padding-left:10px;
+    font-size: 20px;
+    word-spacing: 25px;
+}
+
+.socio > a {
+    color:gray;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.column {
+    width:100%;
+    padding:0 100px; 
+}
+
+.column h3 {
+    padding-left:25px;
+    font-size:x-large;
+    color: darkgray;
+}
+
+#contact p {
+    font-size: 20px;
+    color:darkgray;
+}
+
+ul > li {
+    padding:4px;
+    font-size: 20px;
+} 
+
+li > a {
+    color:darkgray;
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration-line: underline;
+}
+
+.copyr8 {
+    text-align: center;
+    color: darkgray;
+}

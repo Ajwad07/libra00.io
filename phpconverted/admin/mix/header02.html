@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Header</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    header {
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+    .header {
+        position: relative;
+        height: 60px;
+        width: auto;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .9));
+        opacity: .8;
+    }
+    .header>.sbutton {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+    }
+    .sbutton>input {
+        color: white;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 7px;
+        background-color: transparent;
+    }
+    .sbutton>button {
+        height: 34px;
+        width: 62px;
+        border: 1px solid white;
+        margin-left: 2px;
+        padding: 0;
+        border-radius: 13px;
+        color: white;
+        background-color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .sbutton>button:hover {
+        background-color: white;
+        color: black;
+    }
+    .left_header {
+        margin-left: 15px;
+    }
+    .left_header img {
+        height: 53px;
+        width: 40px;
+        border-radius: 20px;
+    }
+    .right_header {
+        margin-right: 15px;
+    }
+    .nav {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .nav a {
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid;
+        padding: 4px 8px;
+        border-radius: 8px;
+        color: rgba(255, 255, 255, .9);
+        background-color: #000000;
+        opacity: .9;
+    }
+    .nav a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 1);
+    }
+    @media screen and (max-width: 576px) {
+        .sbutton {
+            display: none;
+        }
+        .left_header, .right_header {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="left_header"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/CUET_Vector_ogo.svg/330px-CUET_Vector_ogo.svg.png" alt=""><a href="/index.html" class="navbar-brand">Library</a></div>
+        <div class="right_header">
+            <div class="nav"><a href="about.html">About</a></div>
+            <div class="nav"><a href="/catagories/all-catagory.html">Categories</a></div>
+            <div class="nav"><a href="login.html">Log-in</a></div>
+            <div class="nav"><a href="#">Contact</a></div>
+        </div>
+        <div class="sbutton">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" value="search">Go</button>
+        </div>
+    </div>
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Header</title>
+    <style>
+        .navbar-brand>img{
+height: 64px;
+width: 55px;
+
+        }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/CUET_Vector_ogo.svg/330px-CUET_Vector_ogo.svg.png" width="40" height="40" alt="">
+            Library
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/catagories/all-catagory.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log-in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search" name="search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

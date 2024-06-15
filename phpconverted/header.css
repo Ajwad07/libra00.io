@@ -1,0 +1,47 @@
+
+.header {
+    z-index: 1000;
+    position: sticky;
+    top: 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #cccccc, #dddddd);
+    /* Greyish gradient */
+}
+.header .nav-link.active,
+.header .dropdown-item.active {
+    color: #495057;
+    background-color: #f8f9fa;
+    max-width: max-content;
+    margin-right: 2px;
+}
+
+.dropdown-menu {
+    background: linear-gradient(to right, #cccccc, #dddddd);
+    z-index: 1000;
+}
+
+a {
+    border-radius: 10px;
+}
+
+.header .nav-link,
+.header .dropdown-item {
+    color: #333;
+    /* Set navigation links and dropdown item text color to black */
+    transition: color 0.3s;
+    /* Add transition effect for smoother color change */
+    margin-right: 2px;
+   
+}
+
+/* Hover effect for navigation links */
+.header .nav-link:hover,
+.header .dropdown-item:hover {
+    color: #495057;
+    /* Darken text color slightly on hover */
+    background-color: #f8f9fa;
+    /* Lighten background color on hover */
+    max-width: max-content;
+    margin-right: 2px;
+
+}
